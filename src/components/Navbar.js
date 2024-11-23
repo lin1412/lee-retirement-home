@@ -6,10 +6,10 @@ import logo from "./logo.png";
 import { Link } from "react-router-dom";
 import {
   AiOutlineHome,
-  AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
+import { IoLocationOutline } from "react-icons/io5";
+import { MdOutlineEmail } from "react-icons/md";
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
@@ -72,7 +72,7 @@ function NavBar() {
                 to="/locations"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen style={{ marginBottom: "2px" }}/> Locations
+                <IoLocationOutline style={{ marginBottom: "2px" }}/> Locations
               </Nav.Link>
             </Nav.Item>
 
@@ -92,7 +92,7 @@ function NavBar() {
                 to="/contact"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> Contact
+                <MdOutlineEmail style={{ marginBottom: "2px" }} /> Contact
               </Nav.Link>
             </Nav.Item>
           </Nav>
