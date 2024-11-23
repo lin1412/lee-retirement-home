@@ -1,9 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./LocationCard";
-import locationOne from "./locationOne.png";
-import locationTwo from "./locationTwo.png";
-import locationThree from "./locationThree.png";
+import srbLogo from "./Sah_Rang_Bong_Logo.png";
+import srb2Logo from "./Sah_Rang_Bong_II_Logo.png";
+import gtLogo from "./Golden_Time_Logo.jpg";
 
 function Projects() {
   return (
@@ -15,29 +15,29 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="location-card">
             <ProjectCard
-              imgPath={locationOne}
-              title="123 Test Rd, Somewhere, MD, 77777"
-              summary="First Best Place"
-              location="/locations/one"
+              imgPath={gtLogo}
+              address1="10705 Vista Road"
+              address2="Columbia, MD 21044"
+              location="/locations/golden-time"
             />
           </Col>
 
           <Col md={4} className="location-card">
             <ProjectCard
-              imgPath={locationTwo}
-              title="123 Test Rd, Somewhere, MD, 77777"
-              summary="Second Best Place"
-              location="/locations/two"
+              imgPath={srbLogo}
+              address1="10717 Hunting Lane"
+              address2="Columbia, MD 21044"
+              location="/locations/sah-rang-bong"
+            />
+          </Col>
+
+          <Col md={4} className="location-card">
+            <ProjectCard
+              imgPath={srb2Logo}
+              address1="10804 Hunting Lane"
+              address2="Columbia, MD 21044"
+              location="/locations/sah-rang-bong-2"
               />
-          </Col>
-
-          <Col md={4} className="location-card">
-            <ProjectCard
-              imgPath={locationThree}
-              title="123 Test Rd, Somewhere, MD, 77777"
-              summary="Third Best Place"
-              location="/locations/Three"
-            />
           </Col>
         </Row>
       </Container>

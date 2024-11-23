@@ -1,12 +1,12 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 
-function LocationThree() {
+function LocationOne() {
   return (
     <Container fluid className="project-section">
       <Container>
         <h1 className="project-heading">
-          Location Three
+          Golden Time
         </h1>
         <p style={{ color: "white" }}>
           This place is great.
@@ -16,4 +16,4 @@ function LocationThree() {
   );
 }
 
-export default LocationThree;
+export default LocationOne;

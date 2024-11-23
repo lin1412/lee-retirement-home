@@ -4,9 +4,9 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Locations from "./components/Locations/Locations";
-import LocationsOne from "./components/Locations/Location-One/LocationOne";
-import LocationsTwo from "./components/Locations/Location-Two/LocationTwo";
-import LocationsThree from "./components/Locations/Location-Three/LocationThree";
+import LocationsOne from "./components/Locations/GoldenTime/GoldenTime";
+import LocationsTwo from "./components/Locations/Sah-Rang-Bong/Sah-Rang-Bong";
+import LocationsThree from "./components/Locations/Sah-Rang-Bong-2/Sah-Rang-Bong-2";
 import Service from "./components/Service/Service";
 import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer";
@@ -46,9 +46,9 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/"/>} />
           {/* Locations */}
-          <Route path="/locations/one" element={<LocationsOne />} />
-          <Route path="/locations/two" element={<LocationsTwo />} />
-          <Route path="/locations/three" element={<LocationsThree />} />
+          <Route path="/locations/golden-time" element={<LocationsOne />} />
+          <Route path="/locations/sah-rang-bong" element={<LocationsTwo />} />
+          <Route path="/locations/sah-rang-bong-2" element={<LocationsThree />} />
         </Routes>
         <Footer />
       </div>
