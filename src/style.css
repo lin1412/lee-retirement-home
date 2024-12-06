@@ -35,6 +35,10 @@ html {
   color: white;
 }
 
+._name {
+  color: #e3ce15;
+}
+
 .overlay {
   position: absolute;
   top: 0;
@@ -663,10 +667,26 @@ button:focus {
   display: none !important;
 }
 
+/* testimonials */
+.testimonial_wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .testimonials-container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0px 50px 120px 50px;
+}
+
+.testimonial_title {
+  padding: 70px 0;
+}
+
+.testimonial_title h4 {
+  font-size: 2rem;
+  color: #2196F3;
 }
 
 .testimonial {
@@ -675,7 +695,8 @@ button:focus {
   padding: 20px;
   text-align: center;
   flex: 1;
-  margin: 10px;
+  margin: 10px 20px;
+  background: #ffffff;
 }
 
 .testimonial-image {
@@ -696,4 +717,99 @@ button:focus {
 .testimonial-role {
   color: #888;
   font-size: 0.8em;
+}
+
+.dave-container {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.header nav ul li {
+  margin-right: 20px;
+}
+
+.header nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.main-content {
+  padding: 150px 0;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+._left {
+  padding-left: 70px;
+  padding-right: 0;
+}
+
+.mr-3 {
+  margin-right: 30px;
+}
+
+.mr-top-50 {
+  margin-top: 50px;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.hero {
+  padding: 0 150px;
+}
+
+.hero-image {
+  flex: 1;
+  /* Add styles for your hero image here */
+}
+
+.about-image {
+  width: 400px;
+  margin-bottom: 10px;
+}
+
+.textbox-right {
+  text-align: left;
+}
+
+.textbox-right, .founding-story {
+  margin-bottom: 30px;
+}
+
+.textbox-right h2, .founding-story h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.textbox-right p, .founding-story p {
+  line-height: 1.6;
 }

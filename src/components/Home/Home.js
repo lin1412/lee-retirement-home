@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "./home.png";
 import Type from "./Type";
+import userImg from "../../user.png";
 
 const Testimonial = ({ testimonial }) => {
   const { name, quote, role, image } = testimonial;
@@ -20,22 +21,22 @@ const Testimonial = ({ testimonial }) => {
 function Home() {
   const testimonials = [
     {
-      name: 'John Doe',
-      quote: 'This is a great product!',
-      role: 'Software Engineer',
-      image: 'https://example.com/john-doe.jpg',
+      name: 'Rolwyn Quadras',
+      quote: 'The service is so good, I feel like I can walk again',
+      role: 'Retired Citizen',
+      image: userImg,
     },
     {
-      name: 'John Doe',
-      quote: 'This is a great product!',
-      role: 'Software Engineer',
-      image: 'https://example.com/john-doe.jpg',
+      name: 'Peter Lee',
+      quote: 'Living with other veterans like myself feels good. We share stories about our army days',
+      role: 'Retired Army Veteran',
+      image: userImg,
     },
     {
-      name: 'John Doe',
-      quote: 'This is a great product!',
+      name: 'Hang China',
+      quote: 'China! China China!',
       role: 'Software Engineer',
-      image: 'https://example.com/john-doe.jpg',
+      image: userImg,
     }
     // ... more testimonials
   ];
@@ -46,7 +47,7 @@ function Home() {
       <div className="overlay"></div>
       <div className="landing-container">
         <h1 style={{ paddingBottom: 15 }} className="heading">
-          Welcome to Golden Time & Sah Rang Bong Care Assisted Living
+          Welcome to <span className="_name">Golden Time</span> & Sah Rang Bong Care Assisted Living
         </h1>
         <span>Where compassionate care meets comfort and community</span>
         <p style={{ paddingTop: 40, fontSize: '1.5em' }}>
@@ -54,7 +55,10 @@ function Home() {
         </p>
       </div>
     </section>
-    <section>
+    <section className="testimonial_wrapper">
+    <div className="testimonial_title">
+      <h4>Testimonials</h4>
+    </div>
     <div className="testimonials-container">
       {testimonials.map((testimonial, index) => (
         <Testimonial key={index} testimonial={testimonial} />
