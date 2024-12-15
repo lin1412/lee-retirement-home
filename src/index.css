@@ -5,5 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35)); */
-  background-image: linear-gradient(to left, #ced4da, rgb(20 15 35));
+  /* background-image: linear-gradient(to left, #ced4da, rgb(20 15 35)); */
+  /* background-image: linear-gradient(to bottom, #ffd700, #f0c27b); */
+  
 }
